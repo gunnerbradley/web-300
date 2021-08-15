@@ -1,0 +1,107 @@
+/* 
+    Title: theme.css 
+    Author: Gunner Bradley
+    Date: 08/14/21
+    Description: Global Stylesheet
+*/
+
+body.light-theme {
+    --text-color: #000;
+    --background-color: #fff;
+    --anchor-color: #4F3674;
+    --h1-background-color: #3C275A;
+    --h1-border-color: #D6A800;
+    --heading-background-color: #3c275a;
+    --heading-color: #fff;
+    --heading-border-color: #D6A800;
+    --anchor-hover-color: #4F3674;
+    --anchor-hover-background-color: #D6A800;
+    --card-background-color: #fff;
+    --card-title-color: #4F3674;
+    --btn-color: #fff;
+    --btn-background-color: #4F3674;
+    --btn-hover-color: #4F3674;
+    --input-border-color: #ccc;
+}
+
+body.dark-theme {
+    --text-color: #fafafa;
+    --background-color: #303030;
+    --anchor-color: #fff;
+    --h1-background-color: #9c27b0;
+    --h1-border-color: #9c27b0;
+    --heading-background-color: #424242;
+    --heading-color: #fff;
+    --heading-border-color: #424242;
+    --anchor-hover-color: #d176e1;
+    --anchor-hover-background-color: #303030;
+    --card-background-color: #424242;
+    --card-title-color: #d176e1;
+    --btn-color: #fff;
+    --btn-background-color: #7d4787;
+    --btn-hover-color: #fff;
+    --input-border-color: #303030;
+}
+
+
+body {
+    color: var(--text-color);
+    background-color: var(--background-color);
+    font-family: 'Oswald', Verdana, Arial, sans-serif;
+}
+a {
+    color: var(--anchor-color);
+}
+a:hover{
+    color: var(--anchor-hover-color);
+    background-color: var(--anchor-hover-background-color);
+}
+h1{
+    color: var(--heading-color);
+    background-color: var(--h1-background-color);
+    padding: 10px;
+    border:  1px solid var(--h1-border-color);
+}
+h2, h3, h4 {
+    color: var(--heading-color);
+    background-color: var(--heading-background-color);
+    padding: 10px;
+    border:  1px solid var(--heading-border-color);
+}
+input{
+   border: 1px solid var(--input-border-color); 
+}
+
+.card{
+    background-color: var( --card-background-color);
+}
+.card-title{
+    color: var(--card-title-color);
+}
+.btn-primary {
+    color: var(--btn-color);
+    background-color: var(--btn-background-color);
+}
+.btn-primary:hover{
+    color: var(--btn-hover-color);
+    background-color: var(--btn-background-color);
+}
+.drop-down-menu {
+    border: 1px solid var(--input-border-color)
+}
+
+#container {
+    margin: 50px 100px 0 100px;
+}
+
+#icon-mode:hover{
+    cursor: pointer;
+}
+
+#icon-text{
+    padding-left: 10px;
+}
+
+.pull-right{
+    float: right;
+}
