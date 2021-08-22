@@ -128,3 +128,12 @@ input{
 .pull-right{
     float: right;
 }
+
+.link-styles{
+    text-decoration: none;
+    font-family: 'Oswald', sans-serif;
+}
+.link-styles:hover {
+    background-color: #D6A800;
+    
+}
