@@ -70,17 +70,40 @@ h2, h3, h4 {
 }
 input{
    border: 1px solid var(--input-border-color); 
+   padding: 10px 20px;
+   border-radius: 5px;
+}
+.wrapper{
+    font-family: 'Oswald', Verdana, Arial, sans-serif;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .card{
     background-color: var( --card-background-color);
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding: 25px;
+    margin-bottom: 40px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px rgba( 0, 0, 0, 0.25);
+    
 }
 .card-title{
     color: var(--card-title-color);
+    margin: auto;
+    text-align: center;
+    font-size: 28px;
 }
 .btn-primary {
     color: var(--btn-color);
     background-color: var(--btn-background-color);
+    padding: 10px 75px;
+    border-radius: 5px;
 }
 .btn-primary:hover{
     color: var(--btn-hover-color);

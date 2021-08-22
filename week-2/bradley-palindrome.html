@@ -1,0 +1,94 @@
+
+<!-- 
+Title: bradley-palindrome.html 
+Author: Gunner Bradley
+Date: 08/22/21
+Description: HTML app the checks if a word is a plaindrom
+-->
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEB 330 – Enterprise JavaScript II”</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="../theme.css">
+    <link rel="stylesheet" href="../site.css">
+</head>
+<body class="light-theme wrapper">
+    <h1 class="app-header">Welcome to the Palindrome App!</h1>
+    <div class="card">
+        <p class="card-title">Palindrome Checker</p>
+        <form>
+            <label for="txtPhrase">Phrase Value: </label>
+            <input type="text" id="txtPhrase">
+            <br>
+            <br>
+            <button type="button" id="btnCheckPhrase" class="btn-primary">Check Phrase</button>
+        </form>
+    </div>
+    <div class="card">
+        <p class="card-title">Palindrome Results</p>
+        <div id="assign-results-header"></div>
+        <div id="assign-results" class=" assign-results-text"></div>
+    </div>
+
+    <a href="../index.html" class="return-home text-styles">Return</a>
+
+
+<script>
+    function getTodaysDate() {
+        const date = new Date();
+        return date.toLocaleDateString('en-US');
+    };
+    
+    function getLength(str) {
+        return str.length;
+    };
+
+    function reverse(str) {
+        let splitString = str.split("");
+        let reverseArray = splitString.reverse();
+        let joinArray = reverseArray.join(""); 
+        return joinArray;
+    };
+
+    function isPalindrome(str) {
+        let reversed = reverse(str);
+
+        if (str == reversed) {
+            return true
+        } else return false
+    }
+    
+
+
+    document.getElementById('btnCheckPhrase').onclick = ()=>{
+        let assignResultsHeader = document.getElementById('assign-results-header')
+        let assignResults = document.getElementById('assign-results');
+
+        let txtPhrase = document.getElementById('txtPhrase').value; //get input value
+        let today = getTodaysDate(); //get date
+        let length = getLength(txtPhrase); //get length
+        let reversedPhrase = reverse(txtPhrase); // reverse phrase
+        let header = `<p>Date: ${today}<br>Orginal Phrase: ${txtPhrase}<br>Reversed Phrase: ${reversedPhrase}<br>Phrase Length: ${length} </p>`; //constructed header
+
+    
+
+        if (isPalindrome(txtPhrase.toLowerCase())){
+            assignResultsHeader.innerHTML = header;
+            assignResults.innerHTML = `<p>${txtPhrase} <strong><u>is</u></strong> a palindrome!`
+        } else {
+            assignResultsHeader.innerHTML = header;
+            assignResults.innerHTML = `<p>${txtPhrase} <strong><u>is not</u></strong> a palindrome!`
+        }
+    };
+
+</script>
+</body>
+</html>
