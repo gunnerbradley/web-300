@@ -1,0 +1,17 @@
+/*
+Title: restaurant.css 
+Author: Gunner Bradley
+Date: 08/28/21
+Description: working with inheritance, JavaScript's built-in forEach() function, and HTML checkboxes. 
+*/
+
+.sub-card{
+   width: 40%;
+   display: flex;
+   flex-direction: column;
+    
+}
+
+#btnOrder {
+    border-radius: 0;
+}

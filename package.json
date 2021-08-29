@@ -1,0 +1,22 @@
+{
+  "name": "web-330",
+  "version": "1.0.0",
+  "description": "--- ## Contributors * Peter Itskovich * Gunner Bradley",
+  "main": "theme.js",
+  "scripts": {
+    "dev": "lite-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gunnerbradley/web-330.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gunnerbradley/web-330/issues"
+  },
+  "homepage": "https://github.com/gunnerbradley/web-330#readme",
+  "devDependencies": {
+    "lite-server": "^2.6.1"
+  }
+}
