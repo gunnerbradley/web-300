@@ -1,0 +1,15 @@
+#cart-message{
+    float: left;
+    color: #df546a;
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+.cart-num{
+    font-family: 'Oswald', Verdana, Arial, sans-serif;
+}
+.pars{
+    color: var(--card-title-color);
+     font-size: 28px;
+     text-align: center;
+       margin: 0;
+}

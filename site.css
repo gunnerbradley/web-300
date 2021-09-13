@@ -46,7 +46,8 @@ cursor: pointer;
 .return-home{
     color: #4F3674;
     text-decoration: none;
-
+    margin-bottom: 20px;
+    
 }
 .return-home:hover{
     background-color: #D6A800;

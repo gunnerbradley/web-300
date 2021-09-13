@@ -20,7 +20,7 @@ body.light-theme {
     --card-title-color: #4F3674;
     --btn-color: #fff;
     --btn-background-color: #4F3674;
-    --btn-hover-color: #4F3674;
+    --btn-hover-color: #fff;
     --input-border-color: #ccc;
     --table-header-background-color: #4F3674;
     --table-header-color: #fff;
@@ -99,7 +99,7 @@ input{
     width: 50%;
     border-radius: 5px;
     box-shadow: 5px 5px 10px rgba( 0, 0, 0, 0.25);
-    margin-bottom: 40px;
+    margin: 10px auto;
 }
 .card-title{
     color: var(--card-title-color);
@@ -116,7 +116,6 @@ input{
     border-radius: 5px;
 }
 .btn-primary:hover{
-    color: var(--btn-hover-color);
     background-color: var(--btn-background-color);
 }
 .drop-down-menu {
