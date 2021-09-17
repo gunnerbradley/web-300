@@ -21,89 +21,91 @@ Description: working with inheritance, JavaScript's built-in forEach() function,
     <link rel="stylesheet" href="./restaurant.css">
 </head>
 <body class="light-theme wrapper">
-    <h1 class="app-header">Welcome to the Restaurant App!</h1>
-    <div class="card" style="flex-wrap: wrap; justify-content: space-evenly; flex-direction: row;">
-        <p class="card-title" style="width: 100% ">Restaurant Menu</p>
-        <div class="card sub-card">
-            <p class="card-title">Beverages</p>
-            <div class="card-content" id="beverages">
-                <form action="">
-                    <input type="checkbox" id="soda" name="soda" value=3.30>
-                    <label for="soda">Soda ($3.30)</label><br>
+    <div class="app-header">Welcome to the Restaurant App!</div>
+    <div class="assign-content">
+        <div class="card" style="flex-wrap: wrap; justify-content: space-evenly; flex-direction: row;">
+            <p class="card-title" style="width: 100% ">Restaurant Menu</p>
+            <div class="card sub-card">
+                <p class="card-title">Beverages</p>
+                <div class="card-content" id="beverages">
+                    <form action="">
+                        <input type="checkbox" id="soda" name="soda" value=3.30>
+                        <label for="soda">Soda ($3.30)</label><br>
 
-                    <input type="checkbox" id="sweetTea" name="sweetTea" value=3.30>
-                    <label for="sweetTea">Sweet Tea ($3.30)</label><br>
+                        <input type="checkbox" id="sweetTea" name="sweetTea" value=3.30>
+                        <label for="sweetTea">Sweet Tea ($3.30)</label><br>
 
-                    <input type="checkbox" id="icedCoffee" name="icedCoffee" value=2.49>
-                    <label for="icedCoffee">Iced Coffee ($2.49)</label><br>
+                        <input type="checkbox" id="icedCoffee" name="icedCoffee" value=2.49>
+                        <label for="icedCoffee">Iced Coffee ($2.49)</label><br>
 
-                    <input type="checkbox" id="bottledWater" name="bottledWater" value=2.15>
-                    <label for="bottledWater">Bottled Water($2.15)</label><br>
-                </form>
+                        <input type="checkbox" id="bottledWater" name="bottledWater" value=2.15>
+                        <label for="bottledWater">Bottled Water($2.15)</label><br>
+                    </form>
+                </div>
             </div>
-        </div>
-        <div class="card sub-card" >
-            <p class="card-title">Appetizers</p>
-            <div class="card-content" id="appetizers">
-                <form action="">
-                    <input type="checkbox" id="nachos" name="nachos" value=6.60>
-                    <label for="nachos">Nachos ($6.60)</label><br>
+            <div class="card sub-card" >
+                <p class="card-title">Appetizers</p>
+                <div class="card-content" id="appetizers">
+                    <form action="">
+                        <input type="checkbox" id="nachos" name="nachos" value=6.60>
+                        <label for="nachos">Nachos ($6.60)</label><br>
 
-                    <input type="checkbox" id="chipsSalsa" name="chipsSalsa" value=5.50>
-                    <label for="chipsSalsa">Chips and Salsa ($5.50)</label><br>
+                        <input type="checkbox" id="chipsSalsa" name="chipsSalsa" value=5.50>
+                        <label for="chipsSalsa">Chips and Salsa ($5.50)</label><br>
 
-                    <input type="checkbox" id="pretzelCheese" name="pretzelCheese" value=8.80>
-                    <label for="pretzelCheese">Pretzel and Cheese ($8.80)</label><br>
+                        <input type="checkbox" id="pretzelCheese" name="pretzelCheese" value=8.80>
+                        <label for="pretzelCheese">Pretzel and Cheese ($8.80)</label><br>
 
-                    <input type="checkbox" id="friedPickles" name="friedPickles" value=8.25>
-                    <label for="friedPickles">Fried Pickles ($8.25)</label><br>
-                </form>
+                        <input type="checkbox" id="friedPickles" name="friedPickles" value=8.25>
+                        <label for="friedPickles">Fried Pickles ($8.25)</label><br>
+                    </form>
+                </div>
             </div>
-        </div>
-        <div class="card sub-card">
-            <p class="card-title">Main Courses</p>
-            <div class="card-content" id="main-courses">
-                <form action="">
-                    <input type="checkbox" id="streetTacos" name="streetTacos" value=9.70>
-                    <label for="streetTacos">Street Tacos ($9.70)</label><br>
+            <div class="card sub-card">
+                <p class="card-title">Main Courses</p>
+                <div class="card-content" id="main-courses">
+                    <form action="">
+                        <input type="checkbox" id="streetTacos" name="streetTacos" value=9.70>
+                        <label for="streetTacos">Street Tacos ($9.70)</label><br>
 
-                    <input type="checkbox" id="bonelessWings" name="bonelessWings" value=9.70>
-                    <label for="bonelessWings">Boneless Wings ($9.70)</label><br>
+                        <input type="checkbox" id="bonelessWings" name="bonelessWings" value=9.70>
+                        <label for="bonelessWings">Boneless Wings ($9.70)</label><br>
 
-                    <input type="checkbox" id="burgerFries" name="burgerFries" value=12.65>
-                    <label for="burgerFries">Cheese Burger with Fries ($12.65)</label><br>
+                        <input type="checkbox" id="burgerFries" name="burgerFries" value=12.65>
+                        <label for="burgerFries">Cheese Burger with Fries ($12.65)</label><br>
 
-                    <input type="checkbox" id="chickenWrap" name="chickenWrap" value=9.65>
-                    <label for="chickenWrap">Chicken Wrap with Salad ($9.65)</label><br>
-                </form>
+                        <input type="checkbox" id="chickenWrap" name="chickenWrap" value=9.65>
+                        <label for="chickenWrap">Chicken Wrap with Salad ($9.65)</label><br>
+                    </form>
+                </div>
             </div>
-        </div>
-        <div class="card sub-card">
-            <p class="card-title">Desserts</p>
-            <div class="card-content" id="desserts">
-                <form action="">
-                    <input type="checkbox" id="iceCream" name="iceCream" value=4.30>
-                    <label for="iceCream">IceCream($4.30)</label><br>
+            <div class="card sub-card">
+                <p class="card-title">Desserts</p>
+                <div class="card-content" id="desserts">
+                    <form action="">
+                        <input type="checkbox" id="iceCream" name="iceCream" value=4.30>
+                        <label for="iceCream">IceCream($4.30)</label><br>
 
-                    <input type="checkbox" id="chocolateCake" name="chocolateCake" value=4.30>
-                    <label for="chocolateCake">Chocolate Cake ($4.30)</label><br>
-                    
-                    <input type="checkbox" id="applePie" name="applePie" value=3.80>
-                    <label for="applePie">Apple Pie ($3.80)</label><br>
+                        <input type="checkbox" id="chocolateCake" name="chocolateCake" value=4.30>
+                        <label for="chocolateCake">Chocolate Cake ($4.30)</label><br>
+                        
+                        <input type="checkbox" id="applePie" name="applePie" value=3.80>
+                        <label for="applePie">Apple Pie ($3.80)</label><br>
 
-                    <button type="button" id="btnOrder" class="btn-primary" style="width: 100%; padding: 10px 0;">Place Order</button>
-                </form>
+                        <button type="button" id="btnOrder" class="btn-primary" style="width: 100%; padding: 10px 0;">Place Order</button>
+                    </form>
+                </div>
             </div>
-        </div>
 
-    </div>
-    <div class="card">
-        <p class="card-title">Order Summary</p>
-        <div id="order-total" class=" assign-results-text"></div>
-    </div>
+        </div>
+        <div class="card">
+            <p class="card-title">Order Summary</p>
+            <div id="order-total" class=" assign-results-text"></div>
+        </div>
+  
 
     <a href="../index.html" class="return-home text-styles">Return</a>
-
+  </div>
     <script type="module">
         import { Bill, Beverage, Appetizer, MainCourse, Dessert } from "./index.js"
 

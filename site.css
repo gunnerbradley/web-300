@@ -5,67 +5,64 @@
     Description: Global Stylesheet
 */
 
+body {
+    font-family: 'Oswald', Verdana, Arial, sans-serif;
+}
 #container {
-    margin: 50px 100px auto 100px;
+    margin-top: 50px;
+    margin-left: 100px;
+    margin-right: 100px;
+   
 }
 
-#icon-mode:hover{
-cursor: pointer;
-}
-
-#icon-text{
-    padding-left: 10px;
-}
-
-.pull-right{
-    float: right;
-}
-
-.assign-container{
+.assign-container {
     padding: 10px;
-} 
- 
-.assign-content{
+}
+
+.assign-content {
     width: 600px;
     margin: 3% auto 0;
-} 
+    
+    transition: 0.3s;
+}
 
-.assign-results-text{
+.assign-results-text {
     text-align: center;
     font-size: 28px;
 }
 
-.app-header{
+.app-header {
+    font-size: 28px;
     text-align: center;
-    font-weight: 400;
-    border: none;
-    color: inherit;
-    background-color: inherit;
 }
 
-.return-home{
-    color: #4F3674;
-    text-decoration: none;
-    margin-bottom: 20px;
-    
-}
-.return-home:hover{
-    background-color: #D6A800;
-}
-.return-home:visited{
-    color: #3C275A;
+#results-container {
+    width: 600px;
+    margin: 3% auto 0;
 }
 
-.form{
+.full-width {
+    width: 100%;
+}
+
+.form {
     display: inline-grid;
     grid-template-columns: auto;
 }
 
-.form-field{
+.form-field {
     padding: 20px;
+   
 }
 
-.full-width{
-    width: 100%;;
-} 
+#icon-mode:hover {
+    cursor: pointer;
+}
 
+#icon-text {
+    padding-left: 10px;
+}
+
+.pull-right {
+    float: right;
+}

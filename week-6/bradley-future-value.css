@@ -1,0 +1,17 @@
+/* Title: bradley-future-value.css 
+Author: Gunner Bradley
+Date: 09/17/21
+Description: Future value search app */
+
+.danger {
+    float: right;
+    color: #df546a;
+    font-size: 12px;
+    letter-spacing: 2px;
+    text-align: right;
+}
+
+.form-label {
+    display: inline-block;
+    padding-top: 1rem;
+}

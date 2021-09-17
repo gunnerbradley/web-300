@@ -1,8 +1,8 @@
-/* 
-    Title: theme.css 
+/** 
+    Title.theme.css
     Author: Gunner Bradley
     Date: 08/14/21
-    Description: Global Stylesheet
+    Description: Theme stylings
 */
 
 body.light-theme {
@@ -58,98 +58,34 @@ body {
     background-color: var(--background-color);
     font-family: 'Oswald', Verdana, Arial, sans-serif;
 }
+
 a {
     color: var(--anchor-color);
+    text-decoration: none;
 }
-a:hover{
-    color: var(--anchor-hover-color);
+
+a:hover {
     background-color: var(--anchor-hover-background-color);
+    color: var(--anchor-hover-color);
 }
-h1{
+
+h1 {
     color: var(--heading-color);
     background-color: var(--h1-background-color);
     padding: 10px;
-    border:  1px solid var(--h1-border-color);
 }
+
 h2, h3, h4 {
     color: var(--heading-color);
     background-color: var(--heading-background-color);
     padding: 10px;
-    border:  1px solid var(--heading-border-color);
-}
-input{
-   border: 1px solid var(--input-border-color); 
-   padding: 10px 20px;
-   border-radius: 5px;
-}
-.wrapper{
-    font-family: 'Oswald', Verdana, Arial, sans-serif;
-    margin: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-.card{
-    background-color: var( --card-background-color);
-    display: flex;
-    flex-direction: column;
-    padding: 10px;
-    width: 50%;
-    border-radius: 5px;
-    box-shadow: 5px 5px 10px rgba( 0, 0, 0, 0.25);
-    margin: 10px auto;
-}
-.card-title{
-    color: var(--card-title-color);
-    margin: auto;
-    margin-bottom: 10px;
-    text-align: center;
-    font-size: 28px;
-    
-}
-.btn-primary {
-    color: var(--btn-color);
-    background-color: var(--btn-background-color);
-    padding: 10px 75px;
-    border-radius: 5px;
-}
-.btn-primary:hover{
-    background-color: var(--btn-background-color);
-}
-.drop-down-menu {
-    border: 1px solid var(--input-border-color)
-}
-
-#container {
-    margin: 50px 100px 0 100px;
-}
-
-#icon-mode:hover{
-    cursor: pointer;
-}
-
-#icon-text{
-    padding-left: 10px;
-}
-
-.pull-right{
-    float: right;
-}
-
-.link-styles{
-    text-decoration: none;
-    font-family: 'Oswald', sans-serif;
-}
-.link-styles:hover {
-    background-color: #D6A800;
-    
+    border: solid 1px var(--heading-border-color);
 }
 
 table {
     border-collapse: collapse;
     margin-bottom: 30px;
+    background-color: var(--heading-background-color);
 }
 
 th {
@@ -171,4 +107,89 @@ tr:hover {
     background-color: var(--table-hover-background-color);
     color: var(--table-hover-color);
     cursor: pointer;
+}
+.card {
+    background-color: var( --card-background-color);
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px rgba( 0, 0, 0, 0.25);
+    margin: 10px auto;
+}
+.card-title {
+    text-align: center;
+    font-size: 2em;
+    color: var(--card-title-color);
+    font-weight: 400;
+    
+}
+
+.card-content {
+    width: auto;
+    padding: 2px 16px;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.btn {
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    padding: 15px 32px;
+    color: #000;
+}
+
+i {
+    margin-right: 110px
+}
+
+.btn-primary {
+    color: var(--btn-color);
+    background-color: var(--btn-background-color);
+    padding: 10px 75px;
+    border-radius: 5px;
+}
+
+.btn-primary:hover {
+    color: var(--btn-hover-color);
+}
+    
+.input {
+    border: 1px solid var(--input-border-color);
+    border-radius: 4px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    height: 25px;
+    width: 100%;
+    
+}
+
+.drop-down-menu {
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid var(--input-border-color);
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.return-home {
+    color: var(--anchor-color);
+    text-decoration: none;
+    width: 600px;
+    margin: 3% auto 0;
+}
+
+.return-home:hover {
+    color: var(--anchor-color);
+    background-color: var(--anchor-hover-background-color);
+}
+
+.return-home:visited {
+    color: var(--anchor-color);
 }
