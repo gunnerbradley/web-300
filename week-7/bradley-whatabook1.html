@@ -41,9 +41,8 @@ Description: Display book listings from XML doc
     <script src="../theme.js"></script>
     <script>  
          function loadBooks(xml) {
-
                 let books = xml.getElementsByTagName("book");
-
+                
                 let tableData = `
                 <table id='bookTable' class='table'>
                     <thead>
@@ -71,25 +70,16 @@ Description: Display book listings from XML doc
                         <td data-value="Authors">${authors}</td>
                     </tr>`
                 }
-                
                 tableData += `</tbody></table>`;
-
                 document.getElementById('bookList').innerHTML = tableData;
-
-                console.log('Books loaded.')
             }
 
             function anchorClicked(e) {
-
                 e.preventDefault();
-
                 let self = this;
                 let cell = self.parentElement;
                 let row = cell.parentElement;
-
                 let data = row.querySelectorAll("td");
-                console.log("this" + data);
-
                 let bookData = `<ul style="list-style-type: none;">`;
 
                 for (let field of data) {
@@ -100,20 +90,15 @@ Description: Display book listings from XML doc
             }
 
             function addISBNClickEvents() {     
-                
                 let viewButtons = document.querySelectorAll("#bookTable tbody .isbn-link");
                 
                 for (let i = 0; i < viewButtons.length; i++) {
                     viewButtons[i].addEventListener("click", anchorClicked);
                 }
-
-                console.log("View buttons added from NodeList.");
             }
 
 
             window.addEventListener('DOMContentLoaded', (e) => {
-
-                console.log('DOM fully loaded and parsed');
 
                 let fileName = 'books.xml';
 
