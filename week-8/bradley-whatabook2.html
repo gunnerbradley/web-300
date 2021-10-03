@@ -64,7 +64,7 @@ Description: Display book listings from API
                 "jscmd": "details"
             };
 
-            http.get("https://openlibrary.org/api/books/", params).then(res => {
+            http.get("https://openlibrary.org/api/books", params).then(res => {
                 console.log(res);
 
                 document.getElementById("bookList").innerHTML = buildHtmlString(res, "table");
