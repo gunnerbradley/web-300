@@ -21,7 +21,7 @@ Description: Display book listings from API
     <link rel="stylesheet" href="../flex-layout.css">
 </head>
 <body class="light-theme wrapper">
-    <div class="app-header">Welcome to the WhatABook, Part 1 App!</div>
+    <div class="app-header">Welcome to the WhatABook, Part 2 App!</div>
         <div class="assign-content">
             <div class="card">
                 <div class="card-title">Book Listing</div>
@@ -98,7 +98,7 @@ Description: Display book listings from API
                     if (res.hasOwnProperty(key)) {
                         let authors = [];
                         if (res[key].details.authors) {
-                            authors = res[key].details.authors.map(function(author) {
+                            authors = res[key].details.authors.map((author) => {
                                 return author.name;
                             })
                         }
@@ -120,10 +120,15 @@ Description: Display book listings from API
 
                 
                 }
+                
                 ulString += "</ul>";
                 tableString += "</table>";
 
-                return (format === "table") ? tableString : ulString;
+                if (format === "table"){ 
+
+                    return tableString
+
+                } else return ulString
             }
 
             function addISBNClickEvents() {
